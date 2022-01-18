@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 * {
     box-sizing: border-box;
   }
@@ -98,24 +99,6 @@
     flex: 1;
   }
   
-  /* Contact Form */
-  
-  form {
-    border: 1px solid black;
-    box-shadow: 0px 0px 5px black;
-    border-radius: 8px;
-    max-width: 600px;
-    width: 100%;
-    padding: 2rem;
-  }
-  
-  form > * {
-    margin: 0.5rem auto;
-    max-width: 75%;
-    width: 100%;
-    min-height: 1.75rem;
-  }
-  
   /* EXTRA: Corner ribbon */
   .container {
     position: relative;
@@ -155,3 +138,34 @@
     color: white;
     text-decoration: none;
   }
+  /* About Me */
+
+  ul{
+    list-style-type:none;
+    max-width: 1100px;
+    margin:0;
+    /*padding:0;*/
+  /*  width:300px;*/
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: left;
+    background-color: white;
+    text-transform:uppercase;
+  }
+
+/* list of information */ 
+  li>a {
+    display: block;
+    color: black;
+    padding: 8px 17px;
+    text-decoration: none;
+    background-position: 0 1000px;
+    font-family: 'Roboto, sans-serif';
+  }
+  /* list of more information */ 
+
+li>a:hover{
+  background-color: #555;
+  color:white;
+}
+  
