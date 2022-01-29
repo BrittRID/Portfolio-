@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
     <p style="background-color:rgb(115, 146, 160);"><font face = "Verdana" size = "20">Portfolio | Brittany Ridley</font></p> 
-    <ul>
-      <li><a href="#Home">Home</a></li>
-      <li><a href="#About Me">About Me</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#Projects">Projects</a></li>
-    </ul>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About Me">About Me</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+   
   </head>
   <body>
     <main id="root">
@@ -29,7 +35,7 @@
           />
           <h1><font face = "Verdana" size = "25"><strong>WELCOME</strong></font><br /></h1>
          <h2><font face = "Verdana" size = "15"><strong>I'M BRITTANY RIDLEY</strong></font><br /></h2>
-         <h3><font face = "Verdana" size = "10">A SOFTWARE ENGINEER</font><br /></h3>
+         <h3><font face = "Verdana" size = "10">A SOFTWARE DEVELOPER</font><br /></h3>
           <div class="d-flex-justify-content-center align-items-center">
             <a  href="https://github.com/BrittRID" target="_blank">
               <svg
@@ -87,6 +93,10 @@
           </p>
         </div>
       </section>
+
+
+      <!--Projects - redo-->
+      
       <section class="page-section">
         <div class="projects">
           <h1>Select pictures to view completed projects.</h1>
@@ -95,7 +105,8 @@
             <div class="card">
               <!-- Card Image -->
               <div class="card-img">
-                <a href="https://github.com/BrittRID"target="_blank"><img src="https://images.pexels.com/photos/10594738/pexels-photo-10594738.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
+                <!--Links to portfolio is not correct recheck if edit portfolio again-->
+                <a href="https://github.com/BrittRID/TacoParser"target="_blank"><img src="https://images.pexels.com/photos/10594738/pexels-photo-10594738.png?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" 
                   height="300px" width="300px"
                   id="landingImg" 
                   alt="No Image Yet" /> 
@@ -109,11 +120,12 @@
               </div>
             </div>
           </div>
+
           <div class="card-space">
             <div class="card">
               <!-- Card Image -->
               <div class="card-img">
-                <a href="https://github.com/BrittRID/TacoParser"target="_blank"><img src="https://th.bing.com/th/id/OIP.0iqvqUM-_MntTZp4CMBaigHaEK?pid=ImgDet&rs=1" 
+                <a href="https://github.com/BrittRID/WeatherApp"target="_blank"><img src="https://th.bing.com/th/id/OIP.0iqvqUM-_MntTZp4CMBaigHaEK?pid=ImgDet&rs=1" 
                   height="300px" width="300px" 
                   id="landingImg"
                   alt="No Image Yet"
@@ -127,11 +139,13 @@
               </div>
             </div>
           </div>
+
+
           <div class="card-space">
             <div class="card">
               <!-- Card Image -->
               <div class="card-img">
-                <a href="https://github.com/BrittRID/WeatherApp"target="_blank"><img src="https://www.americangeosciences.org/sites/default/files/styles/ci__650_x_430_/public/CI-InlandWaters-USGS-Mosesso-065-600-400px.jpg?itok=7mZqkIfU" 
+                <a href="https://github.com/BrittRID/Kanye-Ron"target="_blank"><img src="https://www.americangeosciences.org/sites/default/files/styles/ci__650_x_430_/public/CI-InlandWaters-USGS-Mosesso-065-600-400px.jpg?itok=7mZqkIfU" 
                   height="300px" width="300px" 
                   id="landingImg"
                   alt="No Image Yet"
@@ -149,34 +163,87 @@
             <div class="card">
               <!-- Card Image -->
               <div class="card-img">
-                <a href="https://github.com/BrittRID/Kanye-Ron"target="_blank"><img src="https://th.bing.com/th/id/R.cfc9297fd639df5c143b11c57eee40c6?rik=Q%2fveFLYMVLMONQ&pid=ImgRaw&r=0" 
+                <a href="https://github.com/BrittRID/ASPNET"target="_blank"><img src="https://th.bing.com/th/id/R.cfc9297fd639df5c143b11c57eee40c6?rik=Q%2fveFLYMVLMONQ&pid=ImgRaw&r=0" 
                   height="300px" width="300px" 
                   id="landingImg"
                   alt="No Image Yet"
                    /></a>
               </div>
-
-              <!-- Content -->
-              <div class="card-content">
-                <h3>Project Title</h3>
-                <p>Project Description</p>
-              </div>
-            </div>
-          </div>
+      
+        <!-- Content -->
+        <div class="card-content">
+          <h3>ASP.NetCore</h3>
+          <p>Updated products from BestBuy Database(CRUD)</p>
         </div>
-      </section>
-      <section
-        id="contact"
-        class="
-          page-section
-          d-flex
-          flex-column
-          justify-content-center
-          align-items-center
-        "
-      >
-      </section>
+      </div>
+    </div>
+  </div>
+</section>
+<section
+  id="contact"
+  class="
+    page-section
+    d-flex
+    flex-column
+    justify-content-center
+    align-items-center
+
+
+
+
+
+
+
+
     </main>
+  <!--Skills section-->
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="img/icons8-html-5-48.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="img/652212.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="img/1199128.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+          <img
+            src="img/git_original_wordmark_logo_icon_146510.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="img/7490698.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="img/68747470733a2f2f6564656e742e6769746875622e696f2f537570657254696e7949636f6e732f696d616765732f7376672f6a6176617363726970742e737667.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 
