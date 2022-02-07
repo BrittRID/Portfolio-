@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  #landing {
+    background-image: url("img/pexels-heloisa-vecchio-9787461br.jpg");
+    background-size: cover;
+    /* rem => root font size (relative unit) */
+    padding: 1rem;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .justify-content-center {
+    justify-content: center;
+  }
+  
+  .align-items-center {
+    align-items: center;
+  }
+  
+  .flex-column {
+    flex-direction: column;
+  }
+  
+  #landing > div {
+    color: #eee;
+    background-color: rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 1rem 0.5rem;
+    box-shadow: 0px 0px 15px #111;
+  }
+  
+  #landingImg {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .page-section {
+    /* vh => viewport height (relative unit) */
+    min-height: 100vh;
+    height: fit-content;
+    padding: 1rem;
+  }
+  
+  /* About Me */
+  .aboutMe {
+    max-width: 600px;
+    width: 100%;
+    margin: 3rem auto;
+  }
+
+  .page-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+  }
+
+  .aboutMe img {
+    height: 37.5rem;
+    width: 37.5rem;
+  }
+  
+  .page-section {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
+  
+  .page-section h1 {
+    margin-bottom: var(--bottom-margin);
+  }
+  
+  .aboutMe p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+  }
+
+
+
+
+  /* Project Cards */
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  
+  .card-space {
+    /* There will be 2 cards per row */
+    flex-basis: 50%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .card-img > img {
+    height: 150px;
+    max-width: 100%;
+  }
+  
+  .card-content {
+    flex: 1;
+  }
+  
+  /* EXTRA: Corner ribbon */
+  .container {
+    position: relative;
+  }
+  
+  .container-wrapper {
+    /* Displayed at the top left corner */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+  
+    /* Size */
+    height: 100px;
+    width: 100px;
+  
+    /* Hide the part of its children which is displayed outside */
+    overflow: hidden;
+  }
+  
+  .container-ribbon {
+    /* Position */
+    left: -64px;
+    position: absolute;
+    top: 32px;
+    /* Size */
+    height: 24px;
+    width: 206px;
+    /* Displayed diagonally */
+    transform: rotate(-45deg);
+    /* Background color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Centerize the text content */
+    text-align: center;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  /* About Me */
+
+  nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  nav h1 {
+    color: var(--primary-color);
+  }
+  
+  nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+  }
+  nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+  
+  nav ul li {
+    font-weight: var(--bold-font);
+  }
+
+  .burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 1.9rem;
+  }
+
+  ul{
+    list-style-type:none;
+    max-width: 1100px;
+    margin:0;
+    /*padding:0;*/
+  /*  width:300px;*/
+    padding: 0 3rem;
+    margin-top: 4rem;
+    text-align: left;
+    background-color: white;
+    text-transform:uppercase;
+  }
+
+/* list of information */ 
+  li>a {
+    display: block;
+    color: black;
+    padding: 8px 17px;
+    text-decoration: none;
+    background-position: 0 1000px;
+    font-family: 'Roboto, sans-serif';
+  }
+  /* list of more information */ 
+
+li>a:hover{
+  background-color: #555;
+  color:white;
+}
+  
+
+/*  Skills section */
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.icon {
+  width: 5.875rem;
+  height: 5.25rem;
+}
+
